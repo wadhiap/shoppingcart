@@ -1,0 +1,192 @@
+* {
+    box-sizing: border-box;
+}
+
+body, table
+{
+    font-size:1em;
+    font-family:arial;
+    margin:0;
+}
+
+a {
+    color:#0066c0;
+    text-decoration: none;
+}
+
+a.action-button
+{
+    display:inline-block;
+    padding:0.4em;
+    background-color: #232f3e;
+    color:white
+}
+
+h1, h2 
+{
+   margin:0;
+}
+
+#main-wrapper
+{
+    width:100%;
+    font-size:0.9em;
+}
+
+#left-right-wrapper
+{
+    overflow: hidden;
+    padding:2%;
+}
+
+#header
+{
+    padding:1%;
+}
+
+#left-wrapper
+{
+    width:80%;
+    float:left;
+}
+
+#right-wrapper
+{
+    float:right;
+    width:20%;
+}
+
+.product-wrapper
+{
+    width:100%;
+    float:left;
+    margin-right:4%; 
+    max-width:150px;
+}
+
+.product-wrapper img
+{
+    width:100%;
+}
+
+div#messages
+{
+    border:1px solid #cccccc;
+    border-radius: 5px;
+    padding:0.4%;
+    margin:2% 2% 0 2%;
+    color:white;
+} 
+
+div.msgsuccess
+{
+    background-color: #4cca3d;
+}
+
+div.msgerror
+{
+    background-color: #da5244;
+}
+
+#cart-message
+{
+    text-align: center;
+    display:block;
+}
+
+#cart-wrapper
+{
+    border: 1px solid black;
+    /*border-radius:  0em 0em 0.5em 0.5em;*/
+}
+
+.cart-item-wrapper
+{
+    overflow:hidden;
+    padding:0.2em;
+}
+
+.cart-item-wrapper:nth-child(even)
+{
+    background-color: #eeeeee;
+}
+
+.cart-item-left
+{
+    float:left;
+    width:50%;
+}
+
+.cart-item-right
+{
+    float:right;
+    width:50%;
+}
+
+#cart-header, .cart-item-wrapper:last-child
+{
+    padding:0.2em 0.4em;
+    font-weight:bold;
+
+}
+
+#cart-header, #header, .cart-item-wrapper:last-child
+{
+    background-color:#232f3e;
+    color:white;
+}
+
+#disclaimer
+{
+    padding:2%;
+    font-size: 0.9em
+}
+
+@media only screen and (max-width: 1110px) {
+
+    #left-wrapper
+    {
+        width:70%;
+    }
+
+    #right-wrapper
+    {
+        width:30%;
+    }
+
+}
+
+@media only screen and (max-width: 634px) {
+
+    body{
+        font-size:0.9em;
+    }
+    
+    #left-wrapper
+    {
+        width:100%;
+        float:none;
+    }
+
+    #right-wrapper
+    {
+        float:none;
+        width:100%;
+        margin-bottom:3%;
+    }
+
+    .product-wrapper
+    {
+        max-width:inherit;
+        border-bottom:1px solid #cccccc;
+        padding-bottom:2%;
+        margin-bottom:2%;
+    }
+
+    #cart-wrapper table
+    {
+        width:100%;
+    }
+
+}
+

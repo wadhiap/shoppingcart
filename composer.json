@@ -1,0 +1,19 @@
+{
+    "name": "wadhiap/shopping-cart",
+    "authors": [
+        {
+            "name": "Pritesh Wadhia",
+            "email": "pritesh.wadhia@gmail.com"
+        }
+    ],
+    "description": "An MVC Shopping Cart",
+    "autoload":{
+        "psr-4":{
+          "ShoppingCart\\": "src/"
+        }
+    },
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^8"
+    }
+}
